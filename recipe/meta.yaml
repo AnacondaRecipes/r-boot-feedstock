@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/boot/boot_{{ version }}.tar.gz
   sha256: adcb90b72409705e3f9c69ea6c15673dcb649b464fed06723fe0930beac5212a
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
